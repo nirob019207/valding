@@ -1,0 +1,110 @@
+.custom-p {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 1rem; /* equivalent to mb-4 in Tailwind */
+}
+.icon-text {
+    display: flex;
+    align-items: flex-start; /* Align icon to the start of the text */
+    margin-left: 1rem; /* equivalent to ml-3 in Tailwind */
+}
+.icon-text img {
+    margin-right: 0.5rem; /* Add some space between the icon and text */
+}
+
+.solar{
+    
+    background-image: url('./assets/solarbac.png'); 
+    background-size: cover;
+  
+
+   
+    }
+    .feedback{
+    
+        background-image: url('./assets/feedbackg.png'); 
+        background-size: cover;
+      
+    
+       
+        }
+
+        .trust {
+            background-image: url('assets/trust.jpeg'); 
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        
+          
+          .border-overlay::before {
+            content: "";
+            position: absolute;
+            top: -5px; /* Adjust as needed */
+            left: -5px; /* Adjust as needed */
+            right: -5px; /* Adjust as needed */
+            bottom: -5px; /* Adjust as needed */
+            border: 2px solid white; /* Adjust border color and width as needed */
+            transform: rotate(45deg);
+            pointer-events: none;
+          }
+          
+          .small {
+            position: relative;
+            background-image: url('assets/smallcard.png'); /* Replace with your image */
+            background-size: cover;
+        }
+        
+        .small-border-overlay {
+            width: 78px; /* Width of the rhombus */
+            height: 78px; /* Height of the rhombus */
+            position: absolute;
+            border: 1px solid #E822EC; /* Adjust border color and width as needed */
+            transform: rotate(45deg);
+            pointer-events: none;
+            box-sizing: border-box; /* Include border in the element's dimensions */
+        }
+        
+        .small2-border-overlay {
+            width: 100px; /* Width of the rhombus */
+            height: 100px; /* Height of the rhombus */
+            position: absolute;
+            border: 0.2px solid #e295e3; /* Adjust border color and width as needed */
+            transform: rotate(45deg);
+            pointer-events: none;
+            box-sizing: border-box; /* Include border in the element's dimensions */
+        }
+        .contact {
+            background-image: url('assets/contact.png'); 
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .space {
+            background-image: url('assets/space.jpg'); 
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .small-con-border-overlay {
+            width: 35px; /* Width of the rhombus */
+            height: 35px; /* Height of the rhombus */
+            position: absolute;
+            border: 1px solid #E822EC; /* Adjust border color and width as needed */
+            transform: rotate(45deg);
+            pointer-events: none;
+            box-sizing: border-box; /* Include border in the element's dimensions */
+        }
+        
+        .small2-con-border-overlay {
+            width: 50px; /* Width of the rhombus */
+            height: 50px; /* Height of the rhombus */
+            position: absolute;
+            border: 0.2px solid #e295e3; /* Adjust border color and width as needed */
+            transform: rotate(45deg);
+            pointer-events: none;
+            box-sizing: border-box; /* Include border in the element's dimensions */
+        }

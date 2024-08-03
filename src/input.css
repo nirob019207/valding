@@ -1,0 +1,90 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    max-width: 1502px;
+    margin: 0 auto; /* Center align the content */
+    
+}
+
+.hover-circle {
+    position: relative;
+    text-decoration: none; /* Remove default underline */
+}
+
+.hover-circle::after {
+    content: '';
+    position: absolute;
+    left: 50%; /* Center horizontally */
+    bottom: -15px; /* Adjust for vertical alignment */
+    transform: translateX(-50%); /* Center horizontally */
+    width: 8px; /* Diameter of the circle */
+    height: 8px; /* Diameter of the circle */
+    background-color: #4c19e6; /* Color of the circle */
+    border-radius: 50%; /* Shape the circle */
+    opacity: 0; /* Initially hide the circle */
+    transition: opacity 0.3s ease; /* Smooth fade-in effect */
+   
+}
+
+.hover-circle:hover::after {
+    opacity: 1; /* Show the circle on hover */
+}
+
+.sidebar {
+    @apply fixed top-0 left-0 h-full bg-gradient-to-r from-[#130a34] via-[#20077d] to-[#130a34];
+    width: 250px;
+    transition: transform 0.3s ease;
+    transform: translateX(-100%);
+  }
+
+  .sidebar.active {
+    transform: translateX(0);
+  }
+
+  .sidebar ul {
+    @apply py-8 px-4;
+  }
+
+  .sidebar ul li {
+    @apply mb-4;
+  }
+
+  .sidebar ul li a {
+    @apply text-[#FFFF] hover:text-[#8722EC] text-lg font-medium block;
+  }
+
+  .background1{
+    
+    background-image: url('./assets/bacground1.png'); 
+    background-size: cover;
+     background-position: center;
+    }
+    .teamback{
+    
+      background-image: url('./assets/teambac.png'); 
+      background-size: cover;
+      height: 100%;
+
+     
+      }
+      .team5{
+    
+        background-image: url('./assets/teamimage/team6.png'); 
+        background-size: cover;
+      
+  
+       
+        }
+
+        .protection{
+    
+          background-image: url('./assets/protection.png'); 
+          background-size: cover;
+        
+    
+         
+          }
